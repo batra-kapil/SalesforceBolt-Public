@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Refresh GraphQL Result" icon-name="utility:user">
+        <div class="slds-var-m-horizontal_medium">
+        <template lwc:if={results}>
+            <template for:each={results} for:item="account">
+            <div key={account.Id}>
+                {account.Name.value}
+            </div>
+            </template>
+        </template>
+        <br/>
+        <lightning-button variant="success" label="Refresh" title="Refresh Result" onclick={handleRefresh} class="slds-m-left_x-small"></lightning-button>
+
+        </div>
+    </lightning-card>
+</template>

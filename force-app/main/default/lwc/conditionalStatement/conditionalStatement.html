@@ -1,0 +1,17 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Conditional Statements" icon-name="standard:account">
+        <div class="slds-p-around_large">
+        <template if:true={one}>
+            1
+        </template>
+        <template if:false={one}>
+            <template if:true={two}>
+                2
+            </template>
+            <template if:false={two}>
+                3
+            </template>
+        </template>
+        </div>
+    </lightning-card>
+</template>

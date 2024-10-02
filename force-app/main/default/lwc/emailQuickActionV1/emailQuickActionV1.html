@@ -1,0 +1,15 @@
+<template>
+  <div class="slds-m-around_medium">
+    <lightning-record-picker
+      lwc:ref="recordPicker"
+      object-api-name="Contact"
+      placeholder="Search..."
+      label="Select a record"
+      matching-info={matchingInfo}
+      display-info={displayInfo}
+      filter={filter}
+      onchange={handleChange}
+    >
+    </lightning-record-picker>
+  </div>
+</template>

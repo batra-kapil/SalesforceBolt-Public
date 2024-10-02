@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Conditional Statements Spring 23" icon-name="standard:account">
+        <div class="slds-p-around_large">
+            <template lwc:if={one}>
+                1
+            </template>
+            <template lwc:elseif={two}>
+                2
+            </template>
+            <template lwc:else>
+                3
+            </template>
+        </div>
+    </lightning-card>
+</template>

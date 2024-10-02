@@ -1,0 +1,25 @@
+<template>
+    <lightning-card
+        title="Get Related Contacts using GraphQL"
+        class="slds-card__body_inner"
+        icon-name="standard:search"
+    >
+        <div class="slds-var-m-around_medium">
+            <lightning-record-picker
+                lwc:ref="recordPicker"
+                object-api-name="Account"
+                placeholder="Search..."
+                label="Select a record"
+                onchange={handleChange}
+            >
+            </lightning-record-picker>
+        </div>
+        <div class="slds-var-m-around_medium">
+            <template lwc:if={contacts}>
+                <template for:each={contacts} for:item="contact">
+                    {contact.Name.value}
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

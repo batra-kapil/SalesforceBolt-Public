@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlatformEventChannelMember xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enrichedFields>
+        <name>Account_Number__c</name>
+    </enrichedFields>
+    <eventChannel>CDCEvents__chn</eventChannel>
+    <filterExpression>CDC_Check__c = true</filterExpression>
+    <selectedEntity>AccountChangeEvent</selectedEntity>
+</PlatformEventChannelMember>

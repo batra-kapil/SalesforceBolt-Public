@@ -1,0 +1,55 @@
+<template>
+  <lightning-card
+    title="Workspace APIs"
+    icon-name="standard:scheduling_workspace"
+  >
+    <div class="slds-var-m-around_medium">
+      <lightning-button label="Open Tab" onclick={openTab}></lightning-button>
+    </div>
+    <div class="slds-var-m-around_medium">
+      <lightning-button
+        label="Open Subtab on Enclosing Tab"
+        onclick={openSubTab}
+      ></lightning-button>
+    </div>
+    <div class="slds-var-m-around_medium">
+      <lightning-button
+        label="Change Label"
+        onclick={changeLabel}
+      ></lightning-button>
+    </div>
+    <div class="slds-var-m-around_medium">
+      <lightning-button
+        label="Change Icon"
+        onclick={changeIcon}
+      ></lightning-button>
+    </div>
+    <div class="slds-var-m-around_medium">
+      <lightning-button
+        label="highlight Tab"
+        onclick={highlightTab}
+      ></lightning-button>
+    </div>
+    <div class="slds-var-m-around_medium">
+      <lightning-button label="Next Tab" onclick={nextTab}></lightning-button>
+    </div>
+    <div class="slds-var-m-around_medium">
+      <lightning-button
+        label="Previous Tab"
+        onclick={previousTab}
+      ></lightning-button>
+    </div>
+    <div class="slds-var-m-around_medium">
+      <lightning-button
+        label="Disable Tab Close"
+        onclick={disableTabClose}
+      ></lightning-button>
+    </div>
+    <div class="slds-var-m-around_medium">
+      <lightning-button
+        label="Enable Tab Close"
+        onclick={enableTabClose}
+      ></lightning-button>
+    </div>
+  </lightning-card>
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="I am Parent with API function " icon-name="utility:user">
+        <div class="slds-var-m-around_medium">
+            <lightning-button label="Refresh" onclick={handleClickPro}>
+
+            </lightning-button>
+            <br/>
+            <!--Using lwc:ref as referenced Id for this component-->
+            <c-child lwc:ref="childcmp"></c-child>
+        </div>
+    </lightning-card>
+</template>

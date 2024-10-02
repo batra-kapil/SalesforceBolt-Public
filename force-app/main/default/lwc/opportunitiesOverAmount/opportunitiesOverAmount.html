@@ -1,0 +1,30 @@
+<template>
+  <!-- Display a list of opportunities -->
+<lightning-card title="List of related opportunities" icon-name="utility:user">
+    <div class="slds-var-m-around_medium">
+    <p>
+        <lightning-formatted-number
+        value={amount}
+        format-style="currency"
+        ></lightning-formatted-number>
+    </p>
+    <template lwc:if={getOppty.data}>
+        <template for:each={getOppty.data} for:item="oppty" for:index="idx">
+        <div key={oppty.Id} class="slds-m-bottom_medium">
+            <p>{idx}. {oppty.Name}</p>
+            <p>
+            <lightning-formatted-number
+                value={oppty.Amount}
+                format-style="currency"
+            ></lightning-formatted-number>
+            </p>
+            <p>
+            <lightning-formatted-date-time value={oppty.CloseDate}></lightning-formatted-date-time>
+            </p>
+            <p><lightning-badge label={oppty.StageName}></lightning-badge></p>
+        </div>
+        </template>
+    </template>
+    </div>
+</lightning-card>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <lightning-card
+        title="RecordPicker Static"
+        class="slds-card__body_inner"
+        icon-name="standard:search"
+    >
+        <div>
+            <lightning-record-picker
+                lwc:ref="recordPicker"
+                object-api-name="Contact"
+                placeholder="Search..."
+                label="Select a record"
+                matching-info={matchingInfo}
+                display-info={displayInfo}
+                filter={filter}
+                onchange={handleChange}
+            >
+            </lightning-record-picker>
+        </div>
+    </lightning-card>
+</template>

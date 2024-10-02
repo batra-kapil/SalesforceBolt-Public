@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Wired with Property" icon-name="utility:user">
+        <template if:true={accounts.data}>
+            <div class="slds-var-m-around_medium">
+                <template for:each={accounts.data} for:item="acc">
+                    <lightning-layout key={acc.Id} class="slds-var-m-vertical_x-small">
+                        <lightning-layout-item flexibility="grow">
+                            {acc.Name}
+                        </lightning-layout-item>
+                        
+                    </lightning-layout>
+                </template>
+            </div>
+        </template>
+    </lightning-card>
+</template>
