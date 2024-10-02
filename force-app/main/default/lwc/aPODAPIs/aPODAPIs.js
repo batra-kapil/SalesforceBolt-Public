@@ -6,6 +6,7 @@ export default class APODAPIs extends LightningElement {
   apodDate;
   connectedCallback() {
     this.apodDate = "2024-09-14";
+    console.log("🚀 ~ this.apodDate:", this.apodDate);
     fetch(
       "https://api.nasa.gov/planetary/apod?api_key=" +
         apiKey +
